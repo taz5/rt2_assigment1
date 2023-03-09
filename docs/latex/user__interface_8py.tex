@@ -1,0 +1,52 @@
+\hypertarget{user__interface_8py}{}\doxysection{scripts/user\+\_\+interface.py File Reference}
+\label{user__interface_8py}\index{scripts/user\_interface.py@{scripts/user\_interface.py}}
+
+
+This file contain the user interface service server.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{user__interface_8py_ac26bdb296b6776907b72c17ce5a1b24a}\label{user__interface_8py_ac26bdb296b6776907b72c17ce5a1b24a}} 
+def {\bfseries user\+\_\+interface.\+main} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{user__interface_8py_a74abdf5fb275d0e26edfd7dd1c1698a2}{user\+\_\+interface.\+ui\+\_\+client}} = rospy.\+Service\+Proxy(\textquotesingle{}/\mbox{\hyperlink{state__machine_8cpp_a1a9543636935547580c0657f4c7c0c2b}{user\+\_\+interface}}\textquotesingle{}, Command)
+\begin{DoxyCompactList}\small\item\em Definition of the command line user interface to set the \char`\"{}start\char`\"{} \char`\"{}stop\char`\"{} varaible by relying on the rospy module. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{user__interface_8py_ac078be233beb6493b6069df650af0fc4}\label{user__interface_8py_ac078be233beb6493b6069df650af0fc4}} 
+{\bfseries user\+\_\+interface.\+rate} = rospy.\+Rate(20)
+\item 
+\mbox{\Hypertarget{user__interface_8py_a056c9b8f69caa9776c573dbb14434cd1}\label{user__interface_8py_a056c9b8f69caa9776c573dbb14434cd1}} 
+{\bfseries user\+\_\+interface.\+x} = int(input(\char`\"{}\textbackslash{}n\+Press 1 to \mbox{\hyperlink{state__machine_8cpp_ab376b87f96a574a793c03c53e75afec8}{start}} the robot from the current position \char`\"{}))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contain the user interface service server. 
+
+\begin{DoxyAuthor}{Author}
+Suraj Deshini 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+09/03/2023
+\end{DoxyDate}
+\textbackslash{}\+Client \+: ~\newline
+ \textbackslash{}user\+\_\+interface
+
+This node define the command line user interface for the control of the robot 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{user__interface_8py_a74abdf5fb275d0e26edfd7dd1c1698a2}\label{user__interface_8py_a74abdf5fb275d0e26edfd7dd1c1698a2}} 
+\index{user\_interface.py@{user\_interface.py}!ui\_client@{ui\_client}}
+\index{ui\_client@{ui\_client}!user\_interface.py@{user\_interface.py}}
+\doxysubsubsection{\texorpdfstring{ui\_client}{ui\_client}}
+{\footnotesize\ttfamily user\+\_\+interface.\+ui\+\_\+client = rospy.\+Service\+Proxy(\textquotesingle{}/\mbox{\hyperlink{state__machine_8cpp_a1a9543636935547580c0657f4c7c0c2b}{user\+\_\+interface}}\textquotesingle{}, Command)}
+
+
+
+Definition of the command line user interface to set the \char`\"{}start\char`\"{} \char`\"{}stop\char`\"{} varaible by relying on the rospy module. 
+
+The service is passed to the service \char`\"{}user\+\_\+interface\char`\"{}, advertised by the \char`\"{}module go\+\_\+to\+\_\+poit\char`\"{}
